@@ -29,19 +29,50 @@
 
         <style>
 #container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 350px;
-    height: 350px;
-    background: #fff1d0;
-    float: left;
-    margin: 4px;
-    border-radius: 10px;
+margin-right: auto;
+margin-left: auto;
+width: 350px;
+height: 400px;
+background: #fff1d0;
+float: left;
+margin: 4px;
+border-radius: 10px;
 }
+
 #header {
-    background: #00a5ff;
-    padding-bottom: 1px;
+background: #00a5ff;
+padding-bottom: 1px;
+position:relative;
+border-radius: 10px 10px 0 0;
+text-align: center;
 }
+
+#header a{
+color: white;
+display: inline-block;
+}
+#header a:hover{
+text-decoration: none;
+}
+
+#header:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 10px;
+bottom: 0;
+left: 0;
+background-color: #007aff;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+#header:hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
 #container img {
     background: #000;
     float: left;
@@ -58,7 +89,7 @@
 			<img src=agr-dir/icon.png style="float:left" width=250px height=200px>
 			<br><h1>Agrodeep</h1><br>
 			<form>
-			<input class="searchBar" type="search" placeholder="Cauta aici produse alimentare" />
+			<input class="searchBar" type="search" placeholder="Caută aici produse alimentare" />
 			<input class="searchBarButton" type="submit" value="Caută" />
 			</form>
 			<br>
@@ -67,7 +98,7 @@
 
 	<div class="maintitle" style="background-color: #0a0a0a;">
 		<div style="float:center">
-			<a style="float:right; color:white;"><img src=agr-dir/poze/cart.svg style="float:right" width=25px height=25px>Cos</a>
+			<a style="float:right; color:white;"><img src=agr-dir/poze/cart.svg style="float:right" width=25px height=25px>Coş</a>
 			<br>
 		</div>
 	</div>
@@ -80,9 +111,9 @@
             <a href="https://therealone78.ddns.net/firma/agr-dir/html/mere.html"><h1>Mere</h1></a>
         </div>
         <img src="agr-dir/poze/mere.jpeg" alt="" height="230" width="230" />
-        Mere rosii romanesti<br><br>
-	Pret/kg:
-	<a href="#">Adauga in cos</a>
+        Mere rosii româneşti<br><br>
+	Preţ/kg:
+	<a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container">
@@ -91,8 +122,8 @@
         </div>  
         <img src="agr-dir/poze/kiwi.jpeg" alt="" height="230" width="230" />
         Kiwi zemoase<br><br>
-	Pret/kg:
-        <a href="#">Adauga in cos</a>
+	Preţ/kg:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -101,20 +132,20 @@
         </div>
         <img src="agr-dir/poze/portocale.jpeg" alt="" height="230" width="230" />
         Portocale<br><br>
-        Pret/kg:
-        <a href="#">Adauga in cos</a>
+        Preţ/kg:
+        <a href="#">Adaugă în coş</a>
     </div>
 
         <br><div style="clear:both">Legume</div><hr>
 
     <div id="container" float:"left">
         <div id="header">
-            <a href="https://therealone78.ddns.net/firma/agr-dir/html/patrunjel.html"><h1>Patrunjel</h1></a>
+            <a href="https://therealone78.ddns.net/firma/agr-dir/html/patrunjel.html"><h1>Pătrunjel</h1></a>
         </div>
         <img src="agr-dir/poze/patrunjel.jpeg" alt="" height="230" width="230" />
-        Patrunjel<br><br>
-        Pret/kg:
-        <a href="#">Adauga in cos</a>
+        Pătrunjel<br><br>
+        Preţ/kg:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -123,49 +154,49 @@
         </div>
         <img src="agr-dir/poze/morcov.jpeg" alt="" height="230" width="230" />
         Morcovi<br><br>
-        Pret/kg:
-        <a href="#">Adauga in cos</a>
+        Preţ/kg:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-            <a href="https://therealone78.ddns.net/firma/agr-dir/html/sfecla.html"><h1>Sfecla rosie</h1></a>
+            <a href="https://therealone78.ddns.net/firma/agr-dir/html/sfecla.html"><h1>Sfeclă roşie</h1></a>
         </div>
         <img src="agr-dir/poze/sfecla.jpeg" alt="" height="230" width="230" />
-        Sfecla rosie<br><br>
-        Pret/kg:
-        <a href="#">Adauga in cos</a>
+        Sfeclă roşie<br><br>
+        Preţ/kg:
+        <a href="#">Adaugă în coş</a>
     </div>
 
-        <br><div style="clear:both">Bucatarie</div><hr>
+        <br><div style="clear:both">Bucătărie</div><hr>
     <div id="container" float:"left">
         <div id="header">
         <a href="https://therealone78.ddns.net/firma/agr-dir/html/cutit.html"><h1>Cutite</h1></a>
         </div>
         <img src="agr-dir/poze/cutit.jpeg" alt="" height="230" width="230" />
-        Cutite ascutite<br><br>
-	Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Cuţite ascuţite<br><br>
+	Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">  
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/spoon.html"><h1>Lingura</h1></a>
+        <a href="https://therealone78.ddns.net/firma/agr-dir/html/spoon.html"><h1>Lingură</h1></a>
         </div>
         <img src="agr-dir/poze/spoon.jpeg" alt="" height="230" width="230" />
-        Lingura inox tacam masa<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Lingură inox tacâm de masă<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/lilSpoon.html"><h1>Lingurita</h1></a>
+        <a href="https://therealone78.ddns.net/firma/agr-dir/html/lilSpoon.html"><h1>Linguriţă</h1></a>
         </div>
         <img src="agr-dir/poze/lilSpoon.jpeg" alt="" height="230" width="230" />
-        Lingurita inox tacam masa<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Linguriţă inox tacâm de masă<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -173,9 +204,9 @@
         <a href="https://therealone78.ddns.net/firma/agr-dir/html/fork.html"><h1>Furculita</h1></a>
         </div>
         <img src="agr-dir/poze/fork.jpeg" alt="" height="230" width="230" />
-        Furculita inox tacam masa<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Furculiţă inox tacâm de masă<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -184,8 +215,8 @@
         </div>
         <img src="agr-dir/poze/tigaie.jpeg" alt="" height="230" width="230" />
         Tigaie teflon TEFAL<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -194,8 +225,8 @@
         </div>
         <img src="agr-dir/poze/castron.jpg" alt="" height="230" width="230" />
         Castron din metal<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
 	<br><div style="clear:both">Alimentare</div><hr>
@@ -205,38 +236,38 @@
         </div>
         <img src="agr-dir/poze/cacao.jpeg" alt="" height="230" width="230" />
         Cacao Dr. Oetker<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/oua.html"><h1>Oua le Naturelle</h1></a>
+        <a href="https://therealone78.ddns.net/firma/agr-dir/html/oua.html"><h1>Ouă le Naturelle</h1></a>
         </div>
         <img src="agr-dir/poze/oua.jpeg" alt="" height="230" width="230" />
-        Oua le Naturelle<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Ouă de găină le Naturelle<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/zahar.html"><h1>Zahar Margaritar</h1></a>
+        <a href="https://therealone78.ddns.net/firma/agr-dir/html/zahar.html"><h1>Zahăr Mărgăritar</h1></a>
         </div>
         <img src="agr-dir/poze/zahar.jpeg" alt="" height="230" width="230" />
-        Zahar Margaritar<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Zahăr Mărgăritar<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/sunca.html"><h1>Sunca Aldis</h1></a>
+        <a href="https://therealone78.ddns.net/firma/agr-dir/html/sunca.html"><h1>Şuncă Aldis</h1></a>
         </div>
         <img src="agr-dir/poze/sunca.jpeg" alt="" height="230" width="230" />
-        Sunca Aldis<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Şuncă Aldis<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -245,18 +276,18 @@
         </div>
         <img src="agr-dir/poze/lapte.jpeg" alt="" height="230" width="230" />
         Lapte ZUZU<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/sprot.html"><h1>Sprot Tara Mea</h1></a>
+        <a href="https://therealone78.ddns.net/firma/agr-dir/html/sprot.html"><h1>Şprot Ţara Mea</h1></a>
         </div>
         <img src="agr-dir/poze/sprot.jpeg" alt="" height="230" width="230" />
-        Sprot Afumat Tara Mea<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Şprot Afumat Ţara Mea<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -265,8 +296,8 @@
         </div>
         <img src="agr-dir/poze/untar.jpeg" alt="" height="230" width="230" />
         Untar de masa 200g, grasime 57%<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
@@ -275,103 +306,113 @@
         </div>
         <img src="agr-dir/poze/nuci.jpeg" alt="" height="230" width="230" />
         Nuci<br><br>
-        Pret/kg:
-        <a href="#">Adauga in cos</a>
+        Preţ/kg:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/mazare.html"><h1>Conserva mazare Bonduelle</h1></a>
+        <a href="https://therealone78.ddns.net/firma/agr-dir/html/mazare.html"><h1>Conservă mazăre Bonduelle</h1></a>
         </div>
         <img src="agr-dir/poze/mazare.jpeg" alt="" height="230" width="230" />
-        Conserva mazare Bonduelle<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Conservă mazăre Bonduelle<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
-        <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/otet.html"><h1>Otet de mere cu miere Raureni</h1></a>
-        </div>
+	<div id="header">
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/otet.html" id="header">
+	<h1>Oţet de mere cu miere Răureni</h1></a>
+	</div>
         <img src="agr-dir/poze/otet.jpeg" alt="" height="230" width="230" />
-        Otet de mere cu miere Raureni<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Oţet de mere cu miere Răureni 0,5L<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
-   	<br><div style="clear:both">Fructe</div><hr>
+   	<br><div style="clear:both">Băuturi</div><hr>
     <div id="container" float:"left">
-        <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/apa.html"><h1>Apa Aqua Carpatica</h1></a>
-        </div>
+	<div id="header">
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/apa.html">
+		<h1>Apă Aqua Carpatica</h1></a>
+	</div>
         <img src="agr-dir/poze/apa.jpg" alt="" height="230" width="230" />
-        Apa Aqua Carpatica<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Apă Plata Aqua Carpatica 1,5L<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/bere.html"><h1>Bere Ciucas</h1></a>
-        </div>
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/bere.html">
+		<h1>Bere Ciucas</h1></a>
+       	</div>
         <img src="agr-dir/poze/bere.jpeg" alt="" height="230" width="230" />
-        Bere Ciucas<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Bere Ciucaş 0,5L<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/cola.html"><h1>Coca Cola Zero</h1></a>
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/cola.html">
+		<h1>Coca Cola Zero</h1></a>
         </div>
         <img src="agr-dir/poze/cola.jpeg" alt="" height="230" width="230" />
-        Coca Cola Zero zahar 0.5L<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Coca Cola Zero zahăr 0,5L<br><br>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
 	<br><div style="clear:both">Cafea</div><hr>
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea.html"><h1>Cafea Doncafe</h1></a>
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea.html">
+		<h1>Cafea Doncafe</h1></a>
         </div>
         <img src="agr-dir/poze/cafea.jpg" alt="" height="230" width="230" />
         Cafea Doncafe<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea1.html"><h1>Cafea Tchibo</h1></a>
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea1.html">
+		<h1>Cafea Tchibo</h1></a>
         </div>
         <img src="agr-dir/poze/cafea1.jpg" alt="" height="230" width="230" />
         Cafea Tchibo<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea2.html"><h1>Cafea Jacobs Selections</h1></a>
-        </div>
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea2.html">
+		<h1>Cafea Jacobs Selections</h1></a>
+       	</div>
         <img src="agr-dir/poze/cafea2.jpg" alt="" height="230" width="230" />
         Cafea Jacobs Selections<br><br>
-        Pret/buc:<br>
-	<a href="#">Adauga in cos</a>
+        Preţ/buc:<br>
+	<a href="#">Adaugă în coş</a>
     </div>
 
     <div id="container" float:"left">
         <div id="header">
-        <a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea3.html"><h1>Cafea Tchibo Expresso</h1></a>
+	<a href="https://therealone78.ddns.net/firma/agr-dir/html/cafea3.html">
+		<h1>Cafea Tchibo Expresso</h1></a>
         </div>
         <img src="agr-dir/poze/cafea3.jpg" alt="" height="230" width="230" />
         Cafea Tchibo Expresso<br><br>
-        Pret/buc:
-        <a href="#">Adauga in cos</a>
+        Preţ/buc:
+        <a href="#">Adaugă în coş</a>
     </div>
 
 </div></div>
+
+<div style="clear:both"><br></div>
 <div id="footer"><embed src="agr-dir/footer.html" width=100%></div>
 </body>
 </html>
