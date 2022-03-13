@@ -12,6 +12,11 @@ padding: 0;
 font-family: arial;
 }
 
+.titImg{
+position: absolute;
+left: 0px;
+}
+
 code{
 background-color: #2F3136;
 background: solid;
